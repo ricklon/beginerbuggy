@@ -1,118 +1,260 @@
-# Beginner Buggy Assembly Instructions
+# Beginner Combat Buggy
+*A 1-pound combat robot platform for getting started in robot combat sports*
 
-## Required Hardware
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Combat Class](https://img.shields.io/badge/Combat%20Class-1lb%20Antweight-red.svg)](#)
+[![Build Status](https://img.shields.io/badge/Build%20Status-Active-green.svg)](#)
 
-### Shoulder Bolts
-- 2× Alloy Steel Shoulder Screw
-  - 5/16" Shoulder Diameter
-  - 3/4" Shoulder Length
-  - 1/4"-20 Thread
-  - $1.75 each
+## 🤖 Project Overview
 
-- 2× Alloy Steel Shoulder Screw
-  - 5/16" Shoulder Diameter
-  - 1" Shoulder Length
-  - 1/4"-20 Thread
-  - $1.79 each
+The **Beginner Combat Buggy** is an educational 1-pound combat robot platform designed to introduce newcomers to the exciting world of robot combat sports. This project provides a complete, buildable design that teaches fundamental robotics concepts while preparing participants for competition.
 
-### Screws and Fasteners
-- 4× Alloy Steel Cup-Point Set Screw (Grub Screw)
-  - M4 × 0.7mm Thread
-  - 4mm Long
-  - Sold in pack of 100
-  - $5.33/pack
+### Key Features
+- **Competition Ready:** Meets standard 1lb antweight combat robot specifications
+- **Educational Focus:** Step-by-step learning experience for all skill levels
+- **Modular Design:** Easy to modify, repair, and upgrade
+- **Safety First:** Comprehensive safety systems and procedures
+- **Community Driven:** Open-source design with active builder support
 
-- 4× Button Head Hex Drive Screw (Motor Mount)
-  - Black-Oxide Alloy Steel
-  - M4 × 0.70mm Thread
-  - 20mm Long
-  - Sold in pack of 100
-  - $14.37/pack
+### What You'll Learn
+- Combat robot design principles
+- Electronics integration and safety systems
+- Mechanical assembly and fastening techniques
+- Battery management and power systems
+- Radio control and failsafe programming
+- Competition preparation and strategy
 
-- Black-Oxide Alloy Steel Hex Drive Flat Head Screw (Threading Screw)
-  - 90° Countersink Angle
-  - M2 × 0.40mm Thread
-  - 5mm Long
-  - Sold in pack of 25
-  - $8.51/pack
+## 📋 Specifications
 
-### Nuts
-- High-Strength Steel Nylon-Insert Locknut
-  - Black-Oxide
-  - 1/4"-20 Thread Size
-  - Sold in pack of 20
-  - $5.44/pack
+| Specification | Value |
+|---------------|-------|
+| **Weight Class** | 1 pound (454g) maximum |
+| **Drive System** | Differential drive, tank steering |
+| **Power System** | 2-4S LiPo battery with kill switch |
+| **Control** | 2.4GHz radio with failsafe |
+| **Motors** | Brushed gear motors |
+| **ESC Options** | Repeat Robotics Budget Dual ESC<br>Weka 20A v2.2 Dual ESC |
+| **Weapon Class** | Beginner-friendly (spinner/wedge/lifter) |
+| **Arena Size** | Standard combat robotics arenas |
 
-## Required Tools
+## 🚀 Getting Started
 
-### Hand Tools
-- Hex Keys/Allen Wrenches:
-  - 5/32" or 4mm (for shoulder bolts)
-  - 2mm (for M4 grub screws)
-  - 2.5mm (for M4 button head screws)
-  - 1.5mm (for M2 flat head screw)
-- 7/16" wrench (for 1/4"-20 lock nuts)
-- Needle or very small flathead screwdriver (for connector work)
+### Prerequisites
+- Basic electronics knowledge (helpful but not required)
+- Access to soldering equipment
+- Precision scale (0.1g accuracy)
+- Standard hobby tools
 
-### Other Tools
-- Light source (for detailed work)
+### Quick Start
+1. **Read the Documentation** - Start with this README and the assembly guide
+2. **Join the Community** - Connect with FUBAR Labs for build sessions
+3. **Gather Materials** - Use the provided parts list and suppliers
+4. **Attend Build Night** - Join a guided build session (recommended for beginners)
+5. **Build and Test** - Follow the step-by-step assembly guide
+6. **Compete** - Enter local antweight competitions
+
+### Build Options
+- **Guided Build Session** - Join FUBAR Labs build nights for hands-on instruction
+- **Solo Build** - Follow the detailed assembly guide independently
+- **Workshop Build** - Organize a group build at your local makerspace
+
+## 📚 Documentation
+
+### Core Documentation
+- **[Assembly Guide](ASSEMBLY.md)** - Complete step-by-step build instructions
+- **[Parts List](PARTS.md)** - Detailed component specifications and suppliers
+- **[Competition Guide](COMPETITION.md)** - Rules, strategy, and event preparation
+- **[Safety Manual](SAFETY.md)** - Essential safety procedures and protocols
+
+### Technical Resources
+- **[Wiring Diagrams](docs/wiring/)** - Electrical schematics and connection guides
+- **[CAD Files](cad/)** - 3D models and mechanical drawings
+- **[Programming Guide](docs/programming/)** - ESC setup and radio configuration
+- **[Troubleshooting](docs/troubleshooting/)** - Common issues and solutions
+
+## 🔧 Hardware Components
+
+### Electronics Package
+- **Motor Controllers:** Repeat Robotics Budget Dual ESC or Weka 20A v2.2
+- **Microcontroller:** Xiao development board
+- **Power:** 2-4S LiPo battery with XT30 connectors
+- **Safety:** Kill switch and weapon safety lock
+- **Control:** 2.4GHz radio system with failsafe
+
+### Mechanical Components
+- **Chassis:** Lightweight aluminum or titanium frame
+- **Drive:** Brushed gear motors with wheels
+- **Fasteners:** High-strength bolts and grub screws
+- **Protection:** Impact-resistant component mounting
+
+### Tool Requirements
+- Hex keys (2mm, 2.5mm, 4mm, 1.5mm)
+- 7/16" wrench for lock nuts
 - Soldering iron and supplies
-- Loctite thread locker
+- Precision scale (0.1g accuracy)
+- Safety equipment (glasses, gloves)
 
-## Mechanical Assembly
+## ⚡ Safety First
 
-### 1. Wheel Assembly
-- Install cores into wheels
-- Pre-thread using the threading screw to ensure proper alignment
-- Install grub screws into wheel-to-core connectors
+**🚨 IMPORTANT SAFETY NOTICE 🚨**
 
-### 2. Motor Installation
-- Attach drive motors using grub screws
-  - Place first grub screw on the flat section
-  - Place second grub screw opposite to the first
-- Mount dead shaft wheels
-  - Secure using grub screws as wheel locks
+Combat robots involve weapons, high-energy systems, and LiPo batteries. **Safety is not optional.**
 
-## Electronics Assembly
+### Critical Safety Features
+- **Kill Switch:** Emergency power disconnection
+- **Weapon Safety Lock:** Physical weapon power removal
+- **Block Testing:** Always elevate robot during testing
+- **Battery Safety:** Proper LiPo handling and charging
+- **Arena Requirements:** Contained testing environment
 
-### 1. Motor Controller Wiring
-- Right Motor:
-  - Red wire to positive (+)
-  - Black wire to remaining terminal
-- Left Motor:
-  - Black wire to positive (+)
-  - Red wire to remaining terminal
+### Before You Build
+- Read all safety documentation thoroughly
+- Understand local regulations and venue requirements
+- Have appropriate safety equipment available
+- Know emergency procedures for electrical and fire hazards
 
-### 2. Xiao Board Setup
-- Install 7-pin right-angle headers on power side
-- Connect to: power, ground, power, D9, D10
+**Never operate a combat robot without proper safety measures in place.**
 
-### 3. Connector Modification
-- Reshell connectors to 5-pin configuration
-- Pin order: power, ground, [skip], white, yellow
-- Note: Requires needle or tiny flathead screwdriver and good lighting
+## 🏆 Competition Information
 
-### 4. Kill Switch Installation
-- Install switch in power circuit (high or low side)
-- Solder XT30 connectors to both ends
+### Competition Classes
+- **Primary:** 1-pound antweight class
+- **Progression:** Path to 3lb, 12lb, and higher weight classes
+- **Rules:** SPARC (Safety and Performance in Robotic Competition) guidelines
 
-## Final Assembly
+### Local Events
+- **FUBAR Labs "Mechanical Mayhem"** - Regular antweight competitions
+- **Regional Events** - Connect with broader combat robotics community
+- **Tournament Formats** - Single elimination, round robin, skill challenges
 
-### 1. Power System Connection
-- Connect battery to kill switch
-- Connect kill switch to motor controller
-- Connect motor controller to motors
+### Getting Competition Ready
+1. **Technical Inspection** - Pass safety and rules compliance check
+2. **Weight Verification** - Confirm 1.000 lb maximum weight
+3. **Safety Demonstration** - Prove all safety systems function
+4. **Driver Preparation** - Practice maneuvering and weapon control
 
-### 2. Securing Components
-- Mount all components using 3M Dual Lock hook and loop tape
-- Apply Loctite to all threaded connections once satisfied with the assembly
+## 🛠️ Build Support
 
-## Important Notes
-- Double-check all electrical connections before powering on
-- Ensure all mechanical connections are secure
-- Test all functions before applying Loctite
+### FUBAR Labs Build Nights
+- **Location:** FUBAR Labs makerspace
+- **Schedule:** [Check calendar for dates]
+- **What's Provided:** Tools, workspace, expert guidance
+- **What to Bring:** Components, enthusiasm, willingness to learn
 
-## Safety Warnings
-- Always disconnect battery before making any modifications
-- Ensure proper polarity on all electrical connections
-- Use appropriate safety equipment when soldering
+### Community Support
+- **Discord/Slack:** Real-time chat with builders and competitors
+- **Build Photos:** Share progress and get feedback
+- **Technical Help:** Troubleshooting assistance from experienced builders
+- **Competition Prep:** Strategy and setup guidance
+
+### Mentorship Program
+- Pair new builders with experienced combat roboticists
+- One-on-one guidance through first build and competition
+- Ongoing support for design improvements and upgrades
+
+## 📈 Project Roadmap
+
+### Version 1.0 (Current)
+- [x] Complete mechanical design
+- [x] Electronics integration guide
+- [x] Safety protocols established
+- [x] Assembly documentation
+- [ ] Competition validation
+- [ ] Community feedback integration
+
+### Version 2.0 (Planned)
+- [ ] Advanced weapon options
+- [ ] Weight optimization improvements
+- [ ] CAD file refinements
+- [ ] Video build tutorials
+- [ ] Multi-language documentation
+
+
+
+## 🤝 Contributing
+
+We welcome contributions from builders, competitors, and educators!
+
+### How to Contribute
+- **Documentation:** Improve guides, add translations, create tutorials
+- **Design:** Mechanical improvements, weight optimization, new features
+- **Testing:** Build validation, competition feedback, safety verification
+- **Community:** Organize build events, mentor new builders, share experiences
+
+### Contribution Guidelines
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes with clear documentation
+4. Test thoroughly (especially safety-related changes)
+5. Submit a pull request with detailed description
+
+### Code of Conduct
+- **Safety First:** All contributions must prioritize builder and spectator safety
+- **Inclusive Community:** Welcome builders of all skill levels and backgrounds
+- **Open Collaboration:** Share knowledge freely and support others' learning
+- **Responsible Innovation:** Consider the impact of changes on the community
+
+## 📄 License and Legal
+
+### Open Source License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+### Safety Disclaimer
+**IMPORTANT:** Combat robotics involves inherent risks. Builders and operators assume full responsibility for safety. This project provides guidelines but cannot guarantee safety - always prioritize proper safety measures and follow local regulations.
+
+### Competition Compliance
+While designed to meet standard competition rules, builders are responsible for verifying compliance with specific event regulations. Rules may vary by competition and region.
+
+## 🔗 Resources and Links
+
+### Essential Reading
+- [SPARC Safety Guidelines](https://sparc.tools/)
+- [Combat Robotics Design Guidelines](https://www.robotcombat.com/)
+- [LiPo Battery Safety](https://batteryuniversity.com/)
+
+### Component Suppliers
+- **Combat Electronics:** [Just Cuz Robotics](https://justcuzrobotics.com/), [Repeat Robotics](https://repeatrobotics.com/)
+- **Mechanical Parts:** [McMaster-Carr](https://mcmaster.com/), Local hardware suppliers
+- **Batteries:** Hobby electronics suppliers, specialized LiPo vendors
+
+### Community
+- **FUBAR Labs:** [https://fubarlabs.org/](https://fubarlabs.org/)
+- **Reddit:** r/battlebots, r/robotics
+- **Facebook:** Local combat robotics groups
+- **Discord:** Combat robotics community servers
+
+## 📞 Contact and Support
+
+### Project Maintainers
+- **FUBAR Labs:** [contact information]
+- **Build Support:** [email/discord]
+- **Safety Questions:** [priority contact]
+
+### Getting Help
+1. **Check Documentation:** Most questions are answered in the guides
+2. **Community Forums:** Discord/Slack for real-time help
+3. **Build Sessions:** Attend FUBAR Labs events for hands-on assistance
+4. **Direct Contact:** Reach out to maintainers for complex issues
+
+### Reporting Issues
+- **Safety Concerns:** Immediate priority - contact maintainers directly
+- **Documentation Bugs:** Open GitHub issue with clear description
+- **Build Problems:** Community forums or Discord for troubleshooting
+- **Feature Requests:** GitHub issues with detailed requirements
+
+---
+
+## 🎯 Ready to Build?
+
+**Welcome to combat robotics!** This project will take you from zero to competition-ready robot while teaching valuable engineering skills and connecting you with an amazing community.
+
+**Next Steps:**
+1. ⭐ Star this repository to stay updated
+2. 📖 Read the [Assembly Guide](ASSEMBLY.md) thoroughly
+3. 📋 Review the [Parts List](PARTS.md) and order components
+4. 📅 Check for upcoming FUBAR Labs build sessions
+5. 🔨 Start building your combat robot!
+
+**Questions?** Don't hesitate to reach out - the combat robotics community is incredibly welcoming and always happy to help new builders succeed.
+
+**Let's build some robots! 🤖⚔️**
