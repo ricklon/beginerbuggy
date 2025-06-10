@@ -105,7 +105,7 @@
 
 ### 2. Securing Components
 - Mount all components using 3M Dual Lock hook and loop tape
-- Apply Loctite to all threaded connections once satisfied with assembly
+- Apply Loctite to all threaded connections once satisfied with the assembly
 
 ## Important Notes
 - Double-check all electrical connections before powering on
@@ -116,4 +116,3 @@
 - Always disconnect battery before making any modifications
 - Ensure proper polarity on all electrical connections
 - Use appropriate safety equipment when soldering
-- Keep Loctite away from electrical components
