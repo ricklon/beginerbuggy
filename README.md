@@ -13,7 +13,6 @@ The **Beginner Combat Buggy** is an educational 1-pound combat robot platform de
 - **Competition Ready:** Meets standard 1lb antweight combat robot specifications
 - **Educational Focus:** Step-by-step learning experience for all skill levels
 - **Modular Design:** Easy to modify, repair, and upgrade
-- **Safety First:** Comprehensive safety systems and procedures
 - **Community Driven:** Open-source design with active builder support
 
 ### What You'll Learn
@@ -64,7 +63,6 @@ The **Beginner Combat Buggy** is an educational 1-pound combat robot platform de
 - **[Assembly Guide](ASSEMBLY.md)** - Complete step-by-step build instructions
 - **[Parts List](PARTS.md)** - Detailed component specifications and suppliers
 - **[Competition Guide](COMPETITION.md)** - Rules, strategy, and event preparation
-- **[Safety Manual](SAFETY.md)** - Essential safety procedures and protocols
 
 ### Technical Resources
 - **[Wiring Diagrams](docs/wiring/)** - Electrical schematics and connection guides

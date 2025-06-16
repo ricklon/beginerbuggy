@@ -19,13 +19,13 @@
 
 **Shoulder Bolts:**
 - [ ] 2× 5/16" × 3/4" shoulder screws (1/4"-20 thread)
-- [ ] 2× 5/16" × 1" shoulder screws (1/4"-20 thread)
+- [ ] 1/4"-20 nylon-insert lock nuts
 
 **Fasteners:**
 - [ ] 8× M4 × 0.7mm × 8mm grub screws (cup point) - *Updated quantity and length*
-- [ ] M2 × 5mm screws for motor mounting
+- [ ] M2 × 6mm screws for motor mounting
 - [ ] M2 × 0.40mm × 5mm flat head threading screws
-- [ ] 1/4"-20 nylon-insert lock nuts
+- [ ] 4× M4 × 0.70mm × 20mm button head screws
 
 **Electronics:**
 - [ ] Repeat Drive Brushed motors or compatible brushed gear motors
@@ -58,7 +58,7 @@
    - Check that core orientation matches wheel design
 
 2. **Pre-thread wheel connections**
-   - Use M2 threading screw to cut clean threads
+   - Use M4 threading screw to cut clean threads
    - Thread screw in completely, then back out
    - **Purpose:** Ensures grub screws will thread smoothly
    - Clean out any plastic debris
@@ -115,20 +115,9 @@
 ## Stage 3: Electronics Preparation
 
 ### Step 5: Motor Controller Wiring
-**⚠️ CRITICAL - Motor Polarity Setup:**
 
-1. **Right Motor Wiring:**
-   - **Red wire** → Positive (+) terminal
-   - **Black wire** → Remaining terminal
 
-2. **Left Motor Wiring:**
-   - **Black wire** → Positive (+) terminal  
-   - **Red wire** → Remaining terminal
 
-3. **Wire routing:**
-   - Keep motor wires away from wheels
-   - Use cable ties or tape to secure
-   - Leave enough length for component placement
 
 ### Step 6: ESP32 Microcontroller Setup
 1. **Install headers on Xiao ESP32C3 or ESP32S3**
