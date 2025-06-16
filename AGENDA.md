@@ -56,12 +56,24 @@
 
 ## 3. Battery System and Power Management (25 minutes)
 
-### Battery Selection and Specifications
-- **LiPo Chemistry:** High discharge rate, lightweight
-- **Voltage Selection:** 2S (7.4V) or 3S (11.1V) typical for 1lb
-- **Capacity vs. Weight:** 500-1000mAh typical range
-- **Discharge Rate:** 20C minimum for weapon and drive loads
-- **Connector Type:** XT30 or similar high-current connector
+### Battery Specifications and Equipment
+- **Battery:** OVONIC 3S LiPo 450mAh - $20 for 2 batteries
+- **Voltage:** 11.1V nominal (3S configuration)
+- **Capacity:** 450mAh - optimized for 1lb weight budget
+- **Discharge Rate:** High-discharge capable for combat loads
+- **Charger:** ISDT PD60 Balance Charger - $15
+- **Kill Switch:** Lynx Kill Switch - $12.50 (combat robotics standard)
+
+### Microcontroller Options
+- **Budget Option:** Xiao ESP32C3 - $10
+- **Advanced Option:** Xiao ESP32S3 - $17
+- **Features:** WiFi capability, compact form factor
+- **Programming:** Arduino IDE compatible
+
+### Control System
+- **Controller:** Xbox Standard Controller - $60
+- **Interface:** Wireless connection to microcontroller
+- **Advantages:** Familiar ergonomics, reliable operation
 
 ### Charging System and Procedures
 - **Balance Charger:** Individual cell monitoring and balancing
@@ -118,19 +130,19 @@
 - **Programming:** Both support standard PWM input from receivers
 
 ### Recommended ESC Options
-**Option 1: Repeat Robotics Budget Brushed Dual ESC**
-- **Voltage Range:** 2-4S LiPo (7.4V - 14.8V)
-- **Current Rating:** [Current rating TBD - check specs]
-- **Form Factor:** Dual channel on single board
-- **Advantages:** Cost-effective, proven in combat, integrated design
-- **Programming:** Basic setup, reliable operation
+**Option 1: Repeat Robotics Dual ESC - $19.99**
+- **Current Rating:** Dual channel brushed ESC
+- **Voltage Range:** 2-4S LiPo compatible  
+- **Form Factor:** Compact dual channel design
+- **Advantages:** Budget-friendly, proven in combat, excellent value
+- **Source:** itgresa.com (verified current pricing)
 
-**Option 2: Weka 20A v2.2 Dual ESC (Just Cuz Robotics)**
+**Option 2: WEKA 20A v2.2 Dual ESC - $40+**
 - **Current Rating:** 20A per channel
-- **Voltage Range:** [Voltage range TBD - check specs]
-- **Form Factor:** Dual channel combat-rated design
-- **Advantages:** Higher current capacity, field-proven reliability
-- **Programming:** Advanced features, customizable parameters
+- **Weight:** Only 3 grams without wires
+- **Features:** Overcurrent protection, undervoltage protection, mixing enabled by default
+- **Advantages:** Premium features, ultra-lightweight, advanced protection circuits
+- **Source:** justcuzrobotics.com, also available through itgresa.com
 
 ### ESC Programming and Setup
 - **Throttle Calibration:** Full range PWM signal setup (1000-2000μs typical)
@@ -160,11 +172,11 @@
 ## 6. Drive Motors and Mobility (20 minutes)
 
 ### Motor Selection
-- **Brushed Gear Motors:** Required for selected ESCs (both are brushed-only)
-- **Voltage Rating:** Match ESC voltage range (2-4S for Repeat Robotics)
-- **Current Draw:** Stay within ESC current limits (20A for Weka)
-- **Mounting Options:** Secure attachment that survives impacts
-- **Weight vs. Performance:** Optimize for 1lb total weight
+- **Motors:** Repeat Motors Mk 4mm - 2 for $20
+- **Type:** Brushed gear motors (required for selected ESCs)
+- **Voltage Rating:** Compatible with 3S LiPo system
+- **Mounting:** 4mm shaft with grub screw attachment
+- **Source:** itgresa.com
 
 ### Drive System Assembly
 - **Motor Mounting:** M4 screws with thread locker
@@ -299,11 +311,32 @@
 - **Multimeter:** Electrical testing and troubleshooting
 
 ### Procurement Strategy
-- **Combat Electronics:** Just Cuz Robotics, Repeat Robotics
-- **Mechanical Hardware:** McMaster-Carr, local suppliers
-- **Hobby Electronics:** Standard hobby suppliers
-- **Lead Times:** Order early for specialized combat components
-- **Spares Planning:** Extra motors, ESCs, connectors for repairs
+- **Combat Robotics Specialists:** itgresa.com (ESCs, motors, general combat parts)
+- **Advanced ESCs:** justcuzrobotics.com (Weka and high-end controllers)
+- **Electronics:** Amazon (batteries, chargers, controllers, general electronics)
+- **Mechanical Hardware:** McMaster-Carr (fasteners, structural components)
+- **Lead Times:** Combat robotics parts may have longer lead times
+- **Budget Planning:** Total electronics package ~$130-180 depending on options
+
+### Current Pricing (Updated June 2025)
+**Budget Build Option:**
+- **ESC:** Repeat Robotics Dual ESC - $19.99 (itgresa.com)
+- **Motors:** Repeat Drive Brushed (pricing varies by configuration)
+- **Microcontroller:** Xiao ESP32C3 - $10-17
+- **Battery:** OVONIC 3S LiPo 450mAh - $20-25 for 4-pack
+- **Charger:** ISDT PD60 Balance Charger - $19.99
+- **Kill Switch:** Lynx Anti-Spark Switch - Available from multiple vendors
+- **Controller:** Xbox Standard Controller - $60
+
+**Performance Build Option:**
+- **ESC:** WEKA 20A v2.2 Dual ESC - $40+ (justcuzrobotics.com)
+- **Motors:** DartBox V2 or similar high-performance options
+- **Other components:** Same as budget build
+
+**Key Supplier Update:**
+- **itgresa.com:** Confirmed source for Repeat Robotics ESC ($19.99), Lynx Switch, WEKA ESCs
+- **justcuzrobotics.com:** WEKA ESCs, DartBox motors, advanced combat electronics
+- **Amazon/Suppliers:** OVONIC 3S 450mAh 4-packs ($20-25), ISDT PD60 charger ($19.99)
 
 ---
 

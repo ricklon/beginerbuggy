@@ -5,6 +5,15 @@
 
 ## Pre-Assembly Preparation
 
+### Procurement Information
+**Specialized Combat Robotics Parts:**
+- **itgresa.com:** Repeat Robotics ESC ($15), Repeat Motors Mk 4mm ($20), combat-specific parts
+- **justcuzrobotics.com:** Weka 20A v2.2 ESC ($40), advanced combat electronics
+- **Amazon:** OVONIC batteries ($20), ISDT charger ($15), Xbox controller ($60)
+- **McMaster-Carr:** Fasteners, mechanical hardware
+
+**Budget Planning:** Total cost approximately $130-180 depending on component choices
+
 ### Parts Inventory Check
 **Verify you have all components before starting:**
 
@@ -12,25 +21,26 @@
 - [ ] 2× 5/16" × 3/4" shoulder screws (1/4"-20 thread)
 - [ ] 1/4"-20 nylon-insert lock nuts
 
-
 **Fasteners:**
-- [ ] 4× M4 × 0.7mm × 8mm grub screws (cup point)
+- [ ] 8× M4 × 0.7mm × 8mm grub screws (cup point) - *Updated quantity and length*
+- [ ] M2 × 6mm screws for motor mounting
+- [ ] M2 × 0.40mm × 5mm flat head threading screws
 - [ ] 4× M4 × 0.70mm × 20mm button head screws
-- [ ] M2 × 0.40mm × 6mm flat head threading screws
 
 **Electronics:**
-- [ ] Drive motors (2×)
-- [ ] Wheels with cores (4×)
-- [ ] Motor controller/ESC
-- [ ] Xiao microcontroller board
-- [ ] Kill switch
-- [ ] XT30 connectors
-- [ ] Battery pack
+- [ ] Repeat Drive Brushed motors or compatible brushed gear motors
+- [ ] Combat ESC: Repeat Robotics Dual ($19.99) or WEKA 20A v2.2 ($40+)
+- [ ] Xiao ESP32C3 ($10) or ESP32S3 ($17) microcontroller
+- [ ] OVONIC 3S LiPo 450mAh batteries - 4-pack ($20-25)
+- [ ] ISDT PD60 Balance Charger - $19.99
+- [ ] Lynx Anti-Spark Switch (pricing varies by vendor)
+- [ ] Xbox Standard Controller - $60
+- [ ] XT30 connectors and wiring
 - [ ] 3M Dual Lock tape
 
 ### Tool Setup
 **Organize your workspace with:**
-- [ ] Hex keys: 5/32" (4mm), 2.5mm, 2mm, 1.5mm
+- [ ] Hex keys: 5/32" (4mm), 2.5mm, 2mm, 1.5mm, plus appropriate size for M2×5 screws
 - [ ] 7/16" wrench
 - [ ] Needle or micro flathead screwdriver
 - [ ] Soldering iron and supplies
@@ -55,9 +65,10 @@
 
 ### Step 2: Prepare Grub Screw Connections
 1. **Test fit grub screws**
-   - Thread each M4 grub screw into wheel-to-core connection
+   - Thread M4 × 8mm grub screws into connections (8 total available)
    - Should thread smoothly after pre-threading
-   - Back out screws but keep them with their respective wheels
+   - **Note:** 8 grub screws provided for wheel attachment and other securing points
+   - Back out screws but keep them organized by intended location
 
 **✓ Stage 1 Check:** All wheels have cores installed, connections are pre-threaded
 
@@ -72,7 +83,7 @@
    - Check clearance for wheel installation
 
 2. **Install motor mounting screws**
-   - Use 4× M4 × 20mm button head screws
+   - Use M2 × 5mm screws for motor mounting
    - **Do NOT apply Loctite yet** - this is temporary mounting
    - Tighten to snug fit, allow for adjustment
 
@@ -108,22 +119,28 @@
 
 
 
-### Step 6: Xiao Board Header Installation
-1. **Install 7-pin right-angle headers**
-   - Solder headers to power side of board
+### Step 6: ESP32 Microcontroller Setup
+1. **Install headers on Xiao ESP32C3 or ESP32S3**
+   - Solder headers as needed for connections
    - Ensure pins are straight and properly aligned
    - Test fit with intended connections
 
-2. **Pin assignment verification:**
-   - Power, Ground, Power, D9, D10
-   - Double-check pin mapping with board documentation
+2. **Programming preparation:**
+   - Set up Arduino IDE with ESP32 board support
+   - Verify board can be programmed before final installation
 
-### Step 7: Connector Modification
-1. **Reshell connectors to 5-pin configuration**
-   - **Pin order:** Power, Ground, [skip], White, Yellow
-   - Use needle or micro flathead screwdriver
-   - **Work under good lighting** - pins are small
-   - Verify connections are secure
+### Control System Setup
+1. **Xbox Controller Configuration:**
+   - Pair Xbox Standard Controller with ESP32 microcontroller
+   - Configure wireless connection and button mapping
+   - Test controller response and range
+   - Set up emergency stop functions
+
+2. **Programming the control system:**
+   - Upload control software to ESP32
+   - Configure drive mixing (tank steering or arcade style)
+   - Set up weapon control (if applicable)
+   - Test failsafe behavior
 
 **✓ Stage 3 Check:**
 - Motor wiring completed with correct polarity
@@ -134,17 +151,35 @@
 
 ## Stage 4: Power System Integration
 
-### Step 8: Kill Switch Installation
+### Step 8: Lynx Kill Switch Installation
 1. **Choose switch placement**
-   - Position for easy access during operation
-   - Consider high-side or low-side switching
+   - Position Lynx kill switch for easy access during operation
+   - Consider high-side switching for safety
    - Plan wire routing to avoid mechanical interference
 
 2. **Solder XT30 connectors**
-   - **Battery side:** Male XT30 connector
-   - **Robot side:** Female XT30 connector
+   - **Battery side:** Connect to OVONIC 3S LiPo 450mAh battery
+   - **Robot side:** Female XT30 connector to robot power system
    - Use proper polarity (red = positive, black = negative)
    - **Test continuity** before final installation
+
+### Battery System Setup
+1. **OVONIC 3S LiPo 450mAh Battery (4-pack recommended):**
+   - **Specifications:** 11.1V, 80C discharge rate, XT30 connector
+   - **Weight:** 35g per battery, perfect for 1lb weight budget
+   - **Pricing:** $20-25 for 4-pack (better value than 2-pack)
+   - Verify cell voltages before first use (should be ~3.7-3.85V per cell)
+   - Use ISDT PD60 charger for all charging operations
+   - Always charge in fire-safe location with LiPo bag
+   - Monitor charging - never leave unattended
+
+2. **ISDT PD60 Charger ($19.99):**
+   - **Specifications:** 60W, 6A max, 1-4S LiPo capable
+   - **Input:** USB-C (5-20V), works with power banks or wall adapters
+   - **Features:** Balance charging, upgradeable firmware, silent cooling
+   - Balance charge at 1A rate (450mA) for 450mAh batteries
+   - Storage charge to 3.8V per cell for long-term storage
+   - Check for damage before each use
 
 ### Step 9: Power System Connections
 1. **Connect battery to kill switch**
