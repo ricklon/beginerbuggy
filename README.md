@@ -87,6 +87,7 @@ The **Beginner Combat Buggy** is an educational 1-pound combat robot platform de
 
 ### Tool Requirements
 - Hex keys (2mm, 2.5mm, 4mm, 1.5mm)
+- Torx keys (TBD)
 - 7/16" wrench for lock nuts
 - Soldering iron and supplies
 - Precision scale (0.1g accuracy)
@@ -137,7 +138,7 @@ Combat robots involve weapons, high-energy systems, and LiPo batteries. **Safety
 - **Location:** FUBAR Labs makerspace
 - **Schedule:** [Check calendar for dates]
 - **What's Provided:** Tools, workspace, expert guidance
-- **What to Bring:** Components, enthusiasm, willingness to learn
+- **What to Bring:** Components, enthusiasm
 
 ### Community Support
 - **Discord/Slack:** Real-time chat with builders and competitors
@@ -217,15 +218,14 @@ While designed to meet standard competition rules, builders are responsible for 
 
 ### Community
 - **FUBAR Labs:** [https://fubarlabs.org/](https://fubarlabs.org/)
-- **Reddit:** r/battlebots, r/robotics
 - **Facebook:** Local combat robotics groups
-- **Discord:** Combat robotics community servers
+- **Discord:** Combat robotics community servers: GSCRL and Fubar Labs
 
 ## 📞 Contact and Support
 
 ### Project Maintainers
 - **FUBAR Labs:** [contact information]
-- **Build Support:** [email/discord]
+- **Build Support:** [discord]
 - **Safety Questions:** [priority contact]
 
 ### Getting Help
