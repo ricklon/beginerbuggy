@@ -115,7 +115,214 @@
 ## Stage 3: Electronics Preparation
 
 ### Step 5: Motor Controller Wiring
+**Choose your ESC option before beginning:**
 
+#### Option A: Repeat Robotics Budget Dual ESC ($19.99)
+**Required Materials:**
+- 16-18 AWG wire for power connections
+- 22-24 AWG wire for signal connections  
+- XT30 connector (female for robot side)
+- Heat shrink tubing (2mm, 4mm, 6mm sizes)
+- Rosin flux and 60/40 solder
+
+**Power Input Wiring:**
+1. **Prepare XT30 connector (Robot Side - Female):**
+   - Cut red and black wire to 4-6 inches length
+   - Strip 4-5mm of insulation from wire ends
+   - Pre-tin both wires with thin solder coating
+   - **CRITICAL:** Larger socket = positive (red), smaller socket = negative (black)
+
+2. **Solder XT30 connections:**
+   - Slide heat shrink over wires before soldering
+   - Heat XT30 terminal cups with soldering iron
+   - Insert pre-tinned wire and fill cup completely with solder
+   - Hold steady for 3-5 seconds until solder cools
+   - Slide heat shrink over connections and shrink with heat gun
+   - **Test with multimeter for continuity and correct polarity**
+
+3. **Connect to ESC power input:**
+   - Identify V+ and GND pads on ESC (usually clearly marked)
+   - Pre-tin ESC pads with thin layer of solder
+   - Solder red wire to V+ pad, black wire to GND pad
+   - **Keep wires short** to minimize weight and resistance
+
+**Motor Output Wiring:**
+1. **Prepare motor wires:**
+   - Use 16-18 AWG wire, approximately 6-8 inches per motor
+   - Strip and pre-tin motor terminal tabs
+   - Strip and pre-tin wire ends (3-4mm length)
+
+2. **Solder motor connections:**
+   - **Right Motor (Motor A):** Red wire to positive terminal, black to negative
+   - **Left Motor (Motor B):** Black wire to positive terminal, red to negative
+   - **Note:** Opposite polarity on left motor for proper drive direction
+   - Wrap wire around terminal clockwise before soldering
+   - Apply heat and solder to create strong mechanical and electrical joint
+   - Cover all connections with heat shrink tubing
+
+3. **Connect to ESC motor outputs:**
+   - ESC should have clearly marked Motor A and Motor B outputs
+   - Solder motor wires to corresponding ESC output pads
+   - **Double-check polarity** - incorrect wiring can damage ESC
+
+**Signal Connections:**
+1. **ESP32 to ESC signal wiring:**
+   - Use 22-24 AWG wire for signal connections
+   - Connect ESP32 Pin D0 to ESC Channel A signal input
+   - Connect ESP32 Pin D1 to ESC Channel B signal input  
+   - Connect ESP32 GND to ESC signal ground
+   - **Keep signal wires away from power wires** to prevent interference
+
+#### Option B: Weka 20A v2.2 Dual ESC ($40+)
+**Key Differences:**
+- Higher current capacity (20A per channel vs ~10A for Repeat ESC)
+- Built-in mixing for tank steering
+- Only 3g weight without wires
+- May include servo-style signal connectors
+
+**Follow same basic wiring procedure as Option A, with these modifications:**
+- Use same XT30 power input wiring
+- Motor outputs may have different pad layout - consult ESC documentation
+- Signal inputs may use standard servo connectors instead of direct solder
+- Built-in mixing may simplify programming requirements
+
+**ESC Programming Notes:**
+- Both ESCs require throttle range calibration with ESP32
+- Set failsafe behavior to stop motors on signal loss
+- Configure acceleration limiting to prevent wheel spin
+- Test all functions before final assembly
+
+### Enhanced XT30 Connector Safety Procedures
+
+**CRITICAL SAFETY WARNING:** Incorrect XT30 installation can cause:
+- Reverse polarity damage to ESC and battery
+- Short circuits leading to fire
+- Permanent component damage
+
+**Visual Identification Guide:**
+```
+Male XT30 (Battery Side):
+┌─────────────────┐
+│  Large   Small  │  ← Terminals
+│   (+)     (-)   │  ← Polarity
+└─────────────────┘
+
+Female XT30 (Robot Side):
+┌─────────────────┐
+│ Socket  Socket  │
+│ Large   Small   │  ← Sockets
+│  (+)     (-)    │  ← Polarity  
+└─────────────────┘
+```
+
+**Step-by-Step XT30 Installation:**
+1. **Verify connector type**: Male (battery), Female (robot)
+2. **Check terminal size**: Large = positive, Small = negative
+3. **Pre-tin all surfaces** with rosin flux and solder
+4. **Heat terminal cup** with 40W iron until solder melts
+5. **Insert wire and add solder** - fill cup completely
+6. **Hold steady 5 seconds** - do not move until cooled
+7. **Install heat shrink** over entire connection
+8. **Test with multimeter**: 
+   - Continuity through connector
+   - No shorts between terminals
+   - Correct polarity marking
+
+### Pre-Power Testing Checklist
+
+**Before connecting battery for first time:**
+- [ ] XT30 connectors properly soldered and insulated
+- [ ] Motor wires connected with correct polarity
+- [ ] Signal wires properly routed and connected
+- [ ] No loose solder strands or wire fragments
+- [ ] All connections covered with heat shrink
+- [ ] Kill switch in OFF position
+- [ ] Multimeter continuity tests completed
+
+**Initial Power-Up Safety:**
+- [ ] Robot elevated on blocks (wheels cannot touch ground)
+- [ ] Fire extinguisher nearby for LiPo safety
+- [ ] Clear workspace around robot
+- [ ] Battery at proper voltage (11.1V ± 0.5V for 3S)
+- [ ] All personnel wearing safety glasses
+
+### Wire Management Best Practices
+
+**Power Wire Routing:**
+- Keep power wires as short as practical
+- Secure with cable ties every 2-3 inches
+- Route away from wheels and moving parts
+- Avoid sharp chassis edges that could cut insulation
+
+**Signal Wire Protection:**
+- Run signal wires separate from power wires (minimum 10mm separation)
+- Use twisted pair wire for differential signals if possible
+- Secure signal wires to prevent stress on solder joints
+- Consider shielded cable in high-noise environments
+
+**Weight Optimization:**
+- Use minimum wire gauge that meets current requirements
+- Trim excess wire length after testing
+- Remove unnecessary wire jacket where safe
+- Bundle related wires with thin cable ties
+
+### Troubleshooting Common Soldering Issues
+
+**Cold Solder Joints:**
+- **Symptoms:** Dull, grainy appearance; poor electrical connection
+- **Causes:** Insufficient heat, old solder, dirty surfaces
+- **Solution:** Clean surfaces, use flux, apply adequate heat
+
+**Solder Bridges:**
+- **Symptoms:** Unwanted connections between adjacent pads
+- **Causes:** Too much solder, insufficient flux, shaky hands
+- **Solution:** Use solder wick to remove excess, clean with isopropyl alcohol
+
+**Overheated Components:**
+- **Symptoms:** Discolored PCB, lifted pads, component damage
+- **Causes:** Too much heat, too long contact time
+- **Prevention:** Use temperature-controlled iron, work quickly, heat sink if needed
+
+**Poor Wire Connections:**
+- **Symptoms:** High resistance, intermittent connections
+- **Causes:** Insufficient pre-tinning, cold joints, stress on connection
+- **Solution:** Re-work connection with proper technique
+
+### Safety Equipment and Procedures
+
+**Required Safety Equipment:**
+- Safety glasses (always worn during soldering)
+- Well-ventilated area or fume extractor
+- Fire extinguisher rated for electrical fires
+- First aid kit with burn treatment supplies
+- Proper lighting (minimum 500 lux at work surface)
+
+**Emergency Procedures:**
+- **Electrical burn:** Cool with water immediately, seek medical attention
+- **Solder fume exposure:** Move to fresh air, seek medical attention if symptoms persist
+- **Component fire:** Disconnect power, use appropriate fire extinguisher
+- **Battery fire:** Evacuate area, call fire department, do not use water
+
+### Maintenance and Inspection
+
+**Post-Assembly Inspection:**
+- Visual inspection of all solder joints
+- Mechanical stress test of connections
+- Electrical continuity verification
+- Insulation resistance testing
+
+**Periodic Maintenance:**
+- Check for loose connections after each use
+- Inspect wire insulation for damage
+- Clean corrosion from connectors
+- Re-tighten mechanical fasteners as needed
+
+**Competition Day Checks:**
+- Battery voltage verification
+- Connector cleanliness and tightness
+- Wire routing security
+- Kill switch operation
+- Emergency stop functionality
 
 
 
