@@ -7,7 +7,7 @@
 
 ## 🤖 Project Overview
 
-The **Beginner Combat Buggy** is an educational 1-pound combat robot platform designed to introduce newcomers to the exciting world of robot combat sports. This project provides a complete, buildable design that teaches fundamental robotics concepts while preparing participants for competition.
+The **Beginner Combat Buggy** is an educational 1-pound antweight combat robot platform, designed to be fully 3D printed in plastic and compliant with antweight competition rules. This project provides a complete, buildable design that teaches fundamental robotics concepts while preparing participants for competition.
 
 ### Key Features
 - **Competition Ready:** Meets standard 1lb antweight combat robot specifications
@@ -235,12 +235,12 @@ While designed to meet standard competition rules, builders are responsible for 
 4. **Direct Contact:** Reach out to maintainers for complex issues
 
 ### Reporting Issues
-## 🎯 Ready to Build?
+## 🛒 Buying Guide
 
-Easily review and purchase the recommended components for your Beginner Combat Buggy build. Links and suggestions are provided for each category.
+Easily review and purchase the recommended components for your Beginner Combat Buggy build. This robot is designed to be 3D printed in plastic, making it lightweight and antweight compliant. Links and suggestions are provided for each category.
 
 ### Hardware
-- **Chassis Frame:** Lightweight aluminum or titanium (McMaster-Carr, local suppliers)
+- **Chassis Frame:** 3D printed plastic (recommended: PETG, ABS, or PLA+), or lightweight aluminum/titanium (optional for custom builds)
 - **Wheels:** Foam or cast wheels (Just Cuz Robotics, Repeat Robotics)
 - **Fasteners:** High-strength bolts, grub screws (McMaster-Carr)
 - **Mounts & Holders:** 3D printed or machined parts (see CAD files)
