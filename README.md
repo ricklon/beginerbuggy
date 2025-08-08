@@ -235,14 +235,61 @@ While designed to meet standard competition rules, builders are responsible for 
 4. **Direct Contact:** Reach out to maintainers for complex issues
 
 ### Reporting Issues
-- **Safety Concerns:** Immediate priority - contact maintainers directly
-- **Documentation Bugs:** Open GitHub issue with clear description
-- **Build Problems:** Community forums or Discord for troubleshooting
-- **Feature Requests:** GitHub issues with detailed requirements
+## 🎯 Ready to Build?
+
+Easily review and purchase the recommended components for your Beginner Combat Buggy build. Links and suggestions are provided for each category.
+
+### Hardware
+- **Chassis Frame:** Lightweight aluminum or titanium (McMaster-Carr, local suppliers)
+- **Wheels:** Foam or cast wheels (Just Cuz Robotics, Repeat Robotics)
+- **Fasteners:** High-strength bolts, grub screws (McMaster-Carr)
+- **Mounts & Holders:** 3D printed or machined parts (see CAD files)
+
+### Electronics
+- **Motor Controllers (ESC):** Repeat Robotics Budget Dual ESC, Weka 20A v2.2 Dual ESC
+- **Microcontroller:** Xiao development board (Seeed Studio, Amazon)
+- **Radio System:** 2.4GHz transmitter/receiver (FlySky, Spektrum, FrSky)
+- **Battery:** 2-4S LiPo battery, XT30 connectors (Hobby electronics suppliers)
+- **Kill Switch:** XT30 inline switch (Just Cuz Robotics, Amazon)
+- **Safety Lock:** Weapon power disconnect (custom or purchased)
+
+### Motors
+- **Drive Motors:** Brushed gear motors (Just Cuz Robotics, Repeat Robotics, Pololu)
+- **Weapon Motors:** Spinner/lifter motors (optional, based on design)
+
+### Tools
+- **Hex Keys:** 2mm, 2.5mm, 4mm, 1.5mm (tool kits, Amazon)
+- **Torx Keys:** As required by fasteners
+- **Wrench:** 7/16" for lock nuts
+- **Soldering Iron:** Basic hobby model
+- **Precision Scale:** 0.1g accuracy (Amazon, eBay)
+- **Safety Equipment:** Glasses, gloves
+
+### Suppliers
+- [Just Cuz Robotics](https://justcuzrobotics.com/)
+- [Repeat Robotics](https://repeatrobotics.com/)
+- [McMaster-Carr](https://mcmaster.com/)
+- [Seeed Studio](https://www.seeedstudio.com/)
+- Hobby electronics suppliers (local and online)
+
+For detailed part numbers and specifications, see the [Parts List](PARTS.md).
 
 ---
 
 ## 🎯 Ready to Build?
+
+**Welcome to combat robotics!** This project will take you from zero to competition-ready robot while teaching valuable engineering skills and connecting you with an amazing community.
+
+**Next Steps:**
+1. ⭐ Star this repository to stay updated
+2. 📖 Read the [Assembly Guide](ASSEMBLY.md) thoroughly
+3. 📋 Review the [Parts List](PARTS.md) and order components
+4. 📅 Check for upcoming FUBAR Labs build sessions
+5. 🔨 Start building your combat robot!
+
+**Questions?** Don't hesitate to reach out - the combat robotics community is incredibly welcoming and always happy to help new builders succeed.
+
+**Let's build some robots! 🤖⚔️**
 
 **Welcome to combat robotics!** This project will take you from zero to competition-ready robot while teaching valuable engineering skills and connecting you with an amazing community.
 
