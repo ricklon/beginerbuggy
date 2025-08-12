@@ -10,7 +10,7 @@
 The **Beginner Combat Buggy** is an educational 1-pound antweight combat robot platform, designed to be fully 3D printed in plastic and compliant with antweight competition rules. This project provides a complete, buildable design that teaches fundamental robotics concepts while preparing participants for competition.
 
 ### Key Features
-- **Competition Ready:** Meets standard 1lb antweight combat robot specifications
+- **Competition Ready:** Meets standard 1lb plastic antweight combat robot specifications
 - **Educational Focus:** Step-by-step learning experience for all skill levels
 - **Modular Design:** Easy to modify, repair, and upgrade
 - **Community Driven:** Open-source design with active builder support
