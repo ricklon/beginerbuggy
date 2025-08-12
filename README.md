@@ -117,7 +117,7 @@ Combat robots involve weapons, high-energy systems, and LiPo batteries. **Safety
 ## 🏆 Competition Information
 
 ### Competition Classes
-- **Primary:** 1-pound antweight class
+- **Primary:** 1-pound plastic antweight class
 - **Progression:** Path to 3lb, 12lb, and higher weight classes
 - **Rules:** SPARC (Safety and Performance in Robotic Competition) guidelines
 
