@@ -1,4 +1,4 @@
-# Beginner Combat Buggy
+# Beginner Buggy
 *A 1-pound combat robot platform for getting started in robot combat sports*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
